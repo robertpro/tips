@@ -1,0 +1,11 @@
+# Install pidgin
+dnf -y install pidgin pidgin-guifications
+
+# Installation for facebook plugin
+dnf install libpurple-devel json-glib-devel glib2-devel
+
+# Installation of plugin from: https://github.com/dequis/purple-facebook/wiki/Building-on-*NIX
+wget https://github.com/dequis/purple-facebook/releases/download/66ee77378d82/purple-facebook-66ee77378d82.tar.gz
+tar xf purple-facebook-66ee77378d82.tar.gz
+cd purple-facebook-*
+./configure
