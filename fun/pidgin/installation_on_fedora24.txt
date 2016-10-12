@@ -9,3 +9,8 @@ wget https://github.com/dequis/purple-facebook/releases/download/66ee77378d82/pu
 tar xf purple-facebook-66ee77378d82.tar.gz
 cd purple-facebook-*
 ./configure
+make
+sudo make install
+
+mkdir -p ~/.purple/plugins
+cp pidgin/libpurple/protocols/facebook/.libs/libfacebook.so ~/.purple/plugins
