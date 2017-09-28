@@ -21,3 +21,13 @@ Exec=/home/YOUR_USERNAME/.local/share/Steam/steamapps/common/rocketleague/Binari
 Icon=/home/YOUR_USERNAME/.steam/steam/steamapps/common/rocketleague/TAGame/Splash/Linux/Splash.bmp
 Terminal=false' > /usr/share/applications/rocket_league.desktop
 ```
+
+**ERROR: Not logged in to Rocket League Servers**
+
+Based on: this [question](https://steamcommunity.com/app/252950/discussions/0/350542145709647928/)
+
+```bash
+# FIX: on fedora
+su -
+ln -s /etc/ssl/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
+```
